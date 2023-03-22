@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: #674188;
+    font-size:x-large;
+    text-align: center;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 15px;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-size: 40px;
+    border: 5px solid #191825;
+    border-radius: 15px;
+    background-color: #F7EFE5;
+}
+
+.calculator-display{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    overflow: auto;
+}
+
+.calculator-keypad{
+    display: flex;
+    width: 100%;
+}
+
+.keypad-number{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.keypad-button{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background:#F7EFE5;
+    border: 1px solid #191825;
+    border-radius: 0px;
+}
+
+.keypad-button:hover{
+    filter: brightness(50%);
+    transition: filter .25s;
+}
+
+.keypad-button.large{
+    width: 50%;
+    background: #191825;
+    color: #F7EFE5;
+}
+
+.keypad-button.dark{
+    background:#191825;
+    color: #F7EFE5;
+}
+
+ .keypad-button.light{
+    background: #865DFF;
+ }
+
+ .keypad-button.dark.zero{
+    border-radius: 0px 0px 0px 10px;
+}
+
+.keypad-button.light.eq{
+    border-radius: 0px 0px 10px 0px;
+    background: #865DFF ;
+}
